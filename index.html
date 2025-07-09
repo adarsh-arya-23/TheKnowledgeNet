@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Knowledge Net</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-theme">
+    <div class="game-container">
+      <!-- Progress Bar -->
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 0%"></div>
+      </div>
+
+      <!-- Game Title -->
+      <div class="game-title">
+        <h1>The Knowledge Net</h1>
+      </div>
+
+      <!-- Custom Intro Screen -->
+      <div class="intro-screen">
+        <div class="intro-content">
+          <div class="typing-container">
+            <h1 class="typing-text"></h1>
+          </div>
+          <div class="intro-message">
+            <p>Test your reasoning skills with this challenging quiz!</p>
+            <div class="intro-features">
+              <div class="feature">
+                <span>🧠</span> Brain Teasers
+              </div>
+              <div class="feature">
+                <span>⏱</span> Timed Questions
+              </div>
+              <div class="feature">
+                <span>🎯</span> Multiple Levels
+              </div>
+            </div>
+          </div>
+          <button class="start-button">▶️ Start Quiz</button>
+        </div>
+      </div>
+
+      <!-- Level & Timer -->
+      <div class="game-meta">
+        <div class="level-indicator">Level 1</div>
+        <div class="timer">⏱ <span id="time">10</span>s</div>
+      </div>
+
+      <!-- Question Area -->
+      <div class="question-box">
+        <p>Loading question...</p>
+      </div>
+
+      <!-- Options (filled dynamically) -->
+      <div class="options-container"></div>
+
+      <!-- Buttons -->
+      <div class="button-group">
+        <button class="next-button" hidden>Next Level →</button>
+        <button class="restart-button" hidden>Restart 🔁</button>
+      </div>
+
+      <div class="utility-buttons">
+        <button class="mute-button">🔊 Sound On</button>
+        <button class="theme-toggle-button">🌙 Dark Mode</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
