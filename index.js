@@ -1,6 +1,6 @@
 // 🔊 Sounds
-const correctSound = new Audio("Correct.mp3");
-const wrongSound = new Audio("Wrong.mp3");
+const correctSound = new Audio("correct.mp3");
+const wrongSound = new Audio("wrong.mp3");
 const nextSound = new Audio("next.mp3");
 const completeSound = new Audio("complete.mp3");
 
